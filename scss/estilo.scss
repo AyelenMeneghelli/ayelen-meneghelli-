@@ -1,0 +1,218 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Source+Sans+Pro:ital,wght@1,600&display=swap');
+
+$color0: #887c99;
+$color1: #d3c7da;
+$color2: #b3c7ca;
+$color3: #ffffff;
+$fuente1:'Source Sans Pro', sans-serif;
+$fuente2: 'Lato', sans-serif;
+$sombra: 10px 10px rgba( 000, 0, 0, 0.1);
+
+*{
+    margin: 0; 
+    padding: 0;
+    border: 0;
+    font-family: $fuente1;
+
+}
+
+.navbar-dark{
+background-color: $color0;
+}
+
+.carouselInicio{
+    width: 100%
+}
+section{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.informacion{
+  width: 100%; 
+  background-color: none;
+  display: grid;
+  padding: 0; 
+  margin: 0; 
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;  
+  grid-template-rows: 50px 500px 500px 5px ;
+}
+.hero{
+  grid-column: 1/4;
+  grid-row: 1/2;
+ }
+.photo { 
+  grid-column: 1/2;
+  grid-row: 2/3;
+   background-image: url(/imagenes/ayelenmeneghelli.jpg);
+   background-size: cover;
+   position: center;
+} 
+.texto {
+  grid-column: 2/3;
+  grid-row: 2/3;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.photo-2 {  
+  grid-column: 2/3;
+  grid-row: 3/4;
+background-image: url(/imagenes/contacto.jpg);
+background-size: cover;
+}
+.formulario { 
+  grid-column: 1/2;
+  grid-row: 3/4;
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+.footeer {
+  grid-column: 1/4;
+  grid-row: 4/6;
+}
+.misredes{
+display: flex;
+flex-direction: column; 
+justify-content: center;
+align-items: center;
+margin-top: 120px;
+}
+.form{
+    outline: none;
+    border: solid 1px $color1;
+    background-color: none;
+    opacity: .5;
+    width: 300px;
+    border: 10px;
+    width: 100%;
+}
+.redes{
+  list-style: none;
+  margin: 1rem;
+  padding: 0;
+  background-color: none;
+  animation-name: aparecer;
+animation-duration: 2s;
+animation-delay: 5s;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+ }
+@keyframes aparecer{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+
+}
+ul{
+   display: flex;
+}
+li{
+    list-style: none;
+}
+/* inspiraciones*/
+@import"_estiloinspiraciones";
+
+/*  interiores*/
+.interiores1{
+  display: grid;
+  grid-template-columns: repeat( 1fr 1fr 1fr 1fr) ;
+   grid-template-rows: repeat(3, 326px); 
+   grid-gap: 10px;
+   width: 100%;
+   height: 100%;
+   background-color: none;
+   margin: 0;
+   padding: 0;
+}
+.it1{
+   grid-column: 1/2;
+   grid-row: 1/2;
+   background-image: url(/imagenes/centrocultural.jpg);
+   background-size: cover;
+   background-position: center;
+   border-radius: 30px;
+   box-shadow: $sombra;
+  
+}
+.it2{
+   grid-column: 3/4;
+   grid-row: 1/2;
+   background-image: url(/imagenes/edificiochaca.jpg);
+   background-size: cover;
+   background-position: center;
+   border-radius: 30px;
+   box-shadow: $sombra;
+}
+.it3{
+   grid-column: 4/5;
+   grid-row: 1/2;
+   background-image: url(/imagenes/iglesia.jpg);
+   background-size: cover;
+   background-position: center;
+   border-radius: 30px;
+   box-shadow: $sombra;
+}
+.it4{
+   grid-column: 1/2;
+   grid-row: 2/3;
+   background-image: url(/imagenes/interiorcocina.jpg);
+   background-size: cover;
+   background-position: center;
+   border-radius: 30px;
+   box-shadow: $sombra;
+  
+}
+.it5{
+   grid-column: 3/4;
+   grid-row: 2/3;
+   background-image: url(/imagenes/interiorliving.jpg);
+   background-size: cover;
+   background-position: center;
+   border-radius: 30px;
+   box-shadow:$sombra;
+}
+.it6{
+   grid-column: 2/3;
+   grid-row: 3/4;
+   background-image: url(/imagenes/posada.jpg);
+   background-size: cover;
+   background-position: center;
+   border-radius: 30px;
+   box-shadow: $sombra;
+ 
+}
+.it7{
+   grid-column: 4/5;
+   grid-row: 3/4;
+   background-image: url(/imagenes/posada.jpg);
+   background-size: cover;
+   background-position: center;
+   border-radius: 30px; 
+   box-shadow: $sombra;
+} 
+.agrandar:hover{
+transform: scale(1.2);
+}
+.lasondas {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  width: 100%;
+  background-image: url(/imagenes/ondas.svg);
+   background-size: cover ;
+   background-position: center;
+ }
+body{
+  height: 100%;
+  width: 100%;
+ background-image: linear-gradient($color0 ,$color3);  
+  margin: 0;
+  padding: 0;
+}

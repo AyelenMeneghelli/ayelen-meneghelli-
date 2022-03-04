@@ -15,61 +15,23 @@ $sombra: 10px 10px rgba( 000, 0, 0, 0.1);
     padding: 0;
     border: 0;
     font-family: $fuente1;
+    font-size: 20px;
 
 }
-
+body{
+   height: 100%;
+   width: 100%;
+  background-image: linear-gradient($color0 ,$color3);  
+   margin: 0;
+   padding: 0;
+   background-repeat: no-repeat;
+}
 .navbar-dark{
  background-color: $color0;
- }
+}
 
 .carouselInicio{
     width: 100%
-}
-section{
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-.informacion{
-  width: 100%; 
-  background-color: none;
-  display: grid;
-  padding: 0; 
-  margin: 0; 
-  grid-gap: 10px;
-  grid-template-columns: 1fr 1fr;  
-  grid-template-rows: 50px 500px 500px 5px ;
-}
-.hero{
-  grid-column: 1/4;
-  grid-row: 1/2;
- }
-.photo { 
-  grid-column: 1/2;
-  grid-row: 2/3;
-   background-image: url(../imagenes/ayelenmeneghelli.jpg);
-   background-size: cover;
-   position: center;
-} 
-.texto {
-  grid-column: 2/3;
-  grid-row: 2/3;
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
-.photo-2 {  
-  grid-column: 2/3;
-  grid-row: 3/4;
-background-image: url(../imagenes/contacto.jpg);
-background-size: cover;
-}
-.formulario { 
-  grid-column: 1/2;
-  grid-row: 3/4;
-width: 100%;
-display: flex;
-flex-direction: column;
 }
 .footeer {
   grid-column: 1/4;
@@ -81,15 +43,6 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-top: 120px;
-}
-.form{
-    outline: none;
-    border: solid 1px $color1;
-    background-color: none;
-    opacity: .5;
-    width: 300px;
-    border: 10px;
-    width: 100%;
 }
 .redes{
   list-style: none;
@@ -117,471 +70,144 @@ ul{
 li{
     list-style: none;
 }
-/* medias */
-@media (max-width: 576px) {
-  .carouselInicio{
-  width: 100%;
-  height: 10%;
-  }
-  .informacion{
-    grid-gap: 10px;
-    grid-template-columns: 1fr;  
-    grid-template-rows: 5px 300px 150px 300px 450px 50px ;
-  }
-  .hero{
-    grid-column: 1/4;
-    grid-row: 1/2;
-   }
-  .photo { 
-    grid-column: 1/4;
-    grid-row: 2/3;
-     background-image: url(../imagenes/ayelenmeneghelli.jpg);
-     background-size: cover;
-     position: center;
-  } 
-  .texto {
-    grid-column: 1/4;
-    grid-row: 3/4;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  }
-  .photo-2 {  
-    grid-column: 1/4;
-    grid-row: 4/5;
-  background-image: url(../imagenes/contacto.jpg);
-  background-size: cover;
-  }
-  .formulario { 
-    grid-column: 1/4;
-    grid-row: 5/6;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  }
-  .footeer {
-    grid-column: 1/4;
-    grid-row: 6/7;
-  }
-  .misredes{
-  display: flex;
-  flex-direction: column; 
-  justify-content: center;
-  align-items: center;
-  margin-top: 120px;
-  }
-  .form{
-      outline: none;
-      border: solid 1px $color1;
-      background-color: none;
-      opacity: .5;
-      width: 100px;
-      border: 10px;
-      width: 100%;
-  }
- }
- @media (min-width: 768px) {
-.informacion{
-  width: 100%; 
-  background-color: none;
-  display: grid;
-  padding: 0; 
-  margin: 0; 
-  grid-gap: 10px;
-  grid-template-columns: 1fr 1fr;  
-  grid-template-rows: 50px 500px 500px 5px ;
+.fraseincio{
+   font-size: 40px;
+   text-align: center;
+
+   span{
+        font-size: 50px;
+        font-family: $fuente2;
 }
-.hero{
-  grid-column: 1/4;
-  grid-row: 1/2;
- }
-.photo { 
-  grid-column: 1/2;
-  grid-row: 2/3;
-   background-image: url(../imagenes/ayelenmeneghelli.jpg);
-   background-size: cover;
-   position: center;
-} 
-.texto {
-  grid-column: 2/3;
-  grid-row: 2/3;
-display: flex;
-flex-direction: column;
-justify-content: center;
 }
-.photo-2 {  
-  grid-column: 2/3;
-  grid-row: 3/4;
-background-image: url(../imagenes/contacto.jpg);
-background-size: cover;
+.col-sm-3{
+   text-align: center;
 }
-.formulario { 
-  grid-column: 1/2;
-  grid-row: 3/4;
-width: 100%;
-display: flex;
-flex-direction: column;
-}
-.footeer {
-  grid-column: 1/4;
-  grid-row: 4/6;
-}
-.misredes{
+.container1{
 display: flex;
 flex-direction: column; 
-justify-content: center;
-align-items: center;
-margin-top: 120px;
+justify-content: center; 
+align-items: center; 
+border: 50px;
 }
-.form{
-    outline: none;
-    border: solid 1px $color1;
-    background-color: none;
-    opacity: .5;
-    width: 300px;
-    border: 10px;
-    width: 100%;
-}
-.redes{
-  list-style: none;
-  margin: 1rem;
-  padding: 0;
-  background-color: none;
-  animation-name: aparecer;
-animation-duration: 2s;
-animation-delay: 5s;
-animation-direction: alternate;
-animation-iteration-count: infinite;
-  }
- }
+
 /* inspiraciones*/
 @import"_estiloinspiraciones";
-
-/*  interiores*/
-.interiores1{
-  display: grid;
-  grid-template-columns: repeat( 1fr 1fr 1fr 1fr) ;
-   grid-template-rows: repeat(3, 326px); 
-   grid-gap: 10px;
-   width: 100%;
-   height: 100%;
+/* sobre mi htm*/
+.informacion{
+   width: 100%; 
    background-color: none;
-   margin: 0;
-   padding: 0;
-}
-.it1{
+   display: grid;
+   padding: 0; 
+   margin: 0; 
+   grid-gap: 10px;
+   grid-template-columns: 1fr 1fr;  
+   grid-template-rows: 700px;
+ }
+ .photo { 
    grid-column: 1/2;
    grid-row: 1/2;
-   background-image: url(../imagenes/centrocultural.jpg);
-   background-size: cover;
-   background-position: center;
-   border-radius: 30px;
-   box-shadow: $sombra;
-  
-}
-.it2{
-   grid-column: 3/4;
-   grid-row: 1/2;
-   background-image: url(../imagenes/edificiochaca.jpg);
-   background-size: cover;
-   background-position: center;
-   border-radius: 30px;
-   box-shadow: $sombra;
-}
-.it3{
-   grid-column: 4/5;
-   grid-row: 1/2;
-   background-image: url(../imagenes/iglesia.jpg);
-   background-size: cover;
-   background-position: center;
-   border-radius: 30px;
-   box-shadow: $sombra;
-}
-.it4{
-   grid-column: 1/2;
-   grid-row: 2/3;
-   background-image: url(../imagenes/interiorcocina.jpg);
-   background-size: cover;
-   background-position: center;
-   border-radius: 30px;
-   box-shadow: $sombra;
-  
-}
-.it5{
-   grid-column: 3/4;
-   grid-row: 2/3;
-   background-image: url(../imagenes/interiorliving.jpg);
-   background-size: cover;
-   background-position: center;
-   border-radius: 30px;
-   box-shadow:$sombra;
-}
-.it6{
+    background-image: url(../imagenes/ayelenmeneghelli.jpg);
+    background-size: cover;
+    position: center;
+ } 
+ .texto {
    grid-column: 2/3;
-   grid-row: 3/4;
-   background-image: url(../imagenes/posada.jpg);
-   background-size: cover;
-   background-position: center;
-   border-radius: 30px;
-   box-shadow: $sombra;
+   grid-row: 1/2;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ }
  
-}
-.it7{
-   grid-column: 4/5;
-   grid-row: 3/4;
-   background-image: url(../imagenes/posada.jpg);
-   background-size: cover;
-   background-position: center;
-   border-radius: 30px; 
-   box-shadow: $sombra;
-} 
-.agrandar:hover{
-transform: scale(1.2);
-}
-/* medias de in media */
-@media (max-width: 992px) { 
-  .interiores1{
-    display: grid;
-    grid-template-columns: repeat( 1fr 1fr 1fr 1fr) ;
-     grid-template-rows: repeat(3, 326px); 
-     grid-gap: 10px;
-     width: 100%;
-     height: 100%;
-     background-color: none;
-     margin: 0;
-     padding: 0;
-  }
-  .it1{
-     grid-column: 1/2;
-     grid-row: 1/2;
-     background-image: url(../imagenes/centrocultural.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px;
-     box-shadow: $sombra;
-    
-  }
-  .it2{
-     grid-column: 3/4;
-     grid-row: 1/2;
-     background-image: url(../imagenes/edificiochaca.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px;
-     box-shadow: $sombra;
-  }
-  .it3{
-     grid-column: 4/5;
-     grid-row: 1/2;
-     background-image: url(../imagenes/iglesia.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px;
-     box-shadow: $sombra;
-  }
-  .it4{
-     grid-column: 1/2;
-     grid-row: 2/3;
-     background-image: url(../imagenes/interiorcocina.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px;
-     box-shadow: $sombra;
-    
-  }
-  .it5{
-     grid-column: 3/4;
-     grid-row: 2/3;
-     background-image: url(../imagenes/interiorliving.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px;
-     box-shadow:$sombra;
-  }
-  .it6{
-     grid-column: 2/3;
-     grid-row: 3/4;
-     background-image: url(../imagenes/posada.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px;
-     box-shadow: $sombra;
-   
-  }
-  .it7{
-     grid-column: 4/5;
-     grid-row: 3/4;
-     background-image: url(../imagenes/posada.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px; 
-     box-shadow: $sombra;
-  }
- 
- @media (max-width: 768px) { 
-  .interiores1{
-    display: grid;
-    grid-template-columns: repeat( 1fr 1fr 1fr) ;
-     grid-template-rows: repeat(3, 326px); 
-     grid-gap: 10px;
-     width: 100%;
-     height: 100%;
-     background-color: none;
-     margin: 0;
-     padding: 0;
-  }
-  .it1{
-     grid-column: 1/2;
-     grid-row: 1/2;
-     background-image: url(../imagenes/centrocultural.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px;
-     box-shadow: $sombra;
-    
-  }
-  .it2{
-     grid-column: 2/3;
-     grid-row: 1/2;
-     background-image: url(../imagenes/edificiochaca.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px;
-     box-shadow: $sombra;
-  }
-  .it3{
-     grid-column: 2/3;
-     grid-row: 2/3;
-     background-image: url(../imagenes/iglesia.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px;
-     box-shadow: $sombra;
-  }
-  .it4{
-     grid-column:3/4;
-     grid-row: 2/3;
-     background-image: url(../imagenes/interiorcocina.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px;
-     box-shadow: $sombra;
-    
-  }
-  .it5{
-     grid-column: 3/4;
-     grid-row: 2/3;
-     background-image: url(../imagenes/interiorliving.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px;
-     box-shadow:$sombra;
-  }
-  .it6{
-     grid-column: 2/3;
-     grid-row: 3/4;
-     background-image: url(../imagenes/posada.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px;
-     box-shadow: $sombra;
-   
-  }
-  .it7{
-     grid-column: 1/2;
-     grid-row: 3/4;
-     background-image: url(../imagenes/posada.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px; 
-     box-shadow: $sombra;
-  }  
-}
 
-@media (max-width: 570px){
-  .interiores1{
-    display: grid;
-    grid-template-columns: repeat(1fr 1fr) ;
-     grid-template-rows: repeat(5, 326px); 
-     grid-gap: 10px;
-     width: 100%;
-     height: 100%;
-     background-color: none;
-     margin: 0;
-     padding: 0;
-  }
-  .it1{
-     grid-column: 1/2;
-     grid-row: 1/2;
-     background-image: url(../imagenes/centrocultural.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px;
-     box-shadow: $sombra;
-    
-  }
-  .it2{
-     grid-column: 2/3;
-     grid-row: 1/2;
-     background-image: url(../imagenes/edificiochaca.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px;
-     box-shadow: $sombra;
-  }
-  .it3{
-     grid-column: 1/2;
-     grid-row: 2/3;
-     background-image: url(../imagenes/iglesia.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px;
-     box-shadow: $sombra;
-  }
-  .it4{
-     grid-column: 2/3;
-     grid-row: 2/3;
-     background-image: url(../imagenes/interiorcocina.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px;
-     box-shadow: $sombra;
-    
-  }
-  .it5{
-     grid-column: 1/2;
-     grid-row: 3/4;
-     background-image: url(../imagenes/interiorliving.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px;
-     box-shadow:$sombra;
-  }
-  .it6{
-     grid-column: 2/3;
-     grid-row: 3/4;
-     background-image: url(../imagenes/posada.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px;
-     box-shadow: $sombra;
-   
-  }
-  .it7{
-     grid-column: 1/2;
-     grid-row: 4/5;
-     background-image: url(../imagenes/posada.jpg);
-     background-size: cover;
-     background-position: center;
-     border-radius: 30px; 
-     box-shadow: $sombra;
-  } 
-}  
+/* contacto html*/
+.informacion2{
+   width: 100%; 
+   background-color: none;
+   display: grid;
+   padding: 0; 
+   margin: 0; 
+   grid-gap: 10px;
+   grid-template-columns: 1fr 1fr;  
+   grid-template-rows: 600px 600px ;
+ }
+.photo-2 {  
+   grid-column: 2/3;
+   grid-row: 1/2;
+   background-image: url(../imagenes/contacto.jpg);
+   background-size: cover;
 }
-body{
-  height: 100%;
-  width: 100%;
- background-image: linear-gradient($color0 ,$color3);  
-  margin: 0;
-  padding: 0;
+.formulario { 
+   grid-column: 1/2;
+   grid-row: 1/2;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+.form{
+    width: 100%;
+    opacity: .5;
+
+ }
+ .ubicacion{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .direccion{
+   grid-column: 2/3;
+   grid-row: 2/3;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: 30px;
+ }
+ .footeer {
+   grid-column: 1/4;
+   grid-row: 4;
+ }
+ /* servicios*/
+ .btn{
+    background-color: $color0;
+    border: $color0;
+ }
+ .btn-primary{
+   background-color: $color0;
+   border: $color0;
+}
+ .btn:hover{
+   background-color: #4e4758 ;
+}
+.btn-primary:hover{
+   background-color: #4e4758 ;
+}
+.servicios-row{
+   padding: 5%;
+   margin: 0;
+   display: flex;
+   flex-direction: row; 
+   justify-content: space-around;
+   align-items: center;
+}
+$dias: (
+   dia1:#d5c9db,
+   dia2:#bcb1c2,
+   dia3:#a59caa,
+   dia4:#938c97,
+);
+@each $dia, $colorss in $dias {
+   .box--#{$dia} {
+      background-color: $colorss;
+      height: 50px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      font-size: 30px;
+      color: black;
+      text-align: center;
+   }
 }

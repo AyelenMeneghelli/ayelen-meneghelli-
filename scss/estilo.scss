@@ -2,21 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Source+Sans+Pro:ital,wght@1,600&display=swap');
 
-$color0: #887c99;
+$color0: #40bd40;
 $color1: #d3c7da;
 $color2: #b3c7ca;
 $color3: #ffffff;
 $fuente1:'Source Sans Pro', sans-serif;
 $fuente2: 'Lato', sans-serif;
 $sombra: 10px 10px rgba( 000, 0, 0, 0.1);
+/* #887c99; */
+
+@mixin fuentes {
+   font-family: $fuente1;
+   font-size: 20px;
+}
 
 *{
     margin: 0; 
     padding: 0;
     border: 0;
-    font-family: $fuente1;
-    font-size: 20px;
-
+    @include fuentes;
 }
 body{
    height: 100%;
@@ -29,9 +33,79 @@ body{
 .navbar-dark{
  background-color: $color0;
 }
-
-.carouselInicio{
-    width: 100%
+/* botones*/
+.btn{
+   background-color: $color0;
+   border: $color0;
+}
+.btn-primary{
+  background-color: $color0;
+  border: $color0;
+  border-color: #ffffff;
+  text-align: center;
+}
+.btn:hover{
+  background-color: #4e4758 ;
+}
+.btn-primary:hover{
+  background-color: #4e4758 ;
+}
+/* Index*/
+.inicio{
+   background-color: $color1;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 50px;
+   justify-content: center;
+   width: 100%;
+   height: 500px;
+   align-items: stretch;
+}
+.intro1{
+   display: flex;
+   justify-content: flex-start;
+   margin-top: 0;
+   text-align: center;
+   width: 100%;
+   font-size: 25px;
+}
+.intro2{
+   display: flex;
+   justify-content:center;
+   margin-top: 0;
+}
+.intro3{
+   display: flex;
+   width: 700px;
+   position: relative;
+   justify-content: flex-end;
+   margin-top: 0;
+   text-align: justify;
+   font-size: 25px;
+   margin-left: 70%;
+}
+.botonproyecto{
+   display: flex;
+   margin-left: 70%;
+}
+.col-sm-3{
+   text-align: center;
+}
+.container1{
+display: flex;
+flex-direction: row; 
+justify-content: center; 
+align-items: center; 
+border: 50px;
+}
+.manera{
+   display: flex;
+   justify-content: flex-start;
+   padding: 50px;
+   width: 100%;
+   font-size: 25px;
+   margin-right: 70%;
+   text-transform: uppercase;
 }
 .footeer {
   grid-column: 1/4;
@@ -70,26 +144,6 @@ ul{
 li{
     list-style: none;
 }
-.fraseincio{
-   font-size: 40px;
-   text-align: center;
-
-   span{
-        font-size: 50px;
-        font-family: $fuente2;
-}
-}
-.col-sm-3{
-   text-align: center;
-}
-.container1{
-display: flex;
-flex-direction: column; 
-justify-content: center; 
-align-items: center; 
-border: 50px;
-}
-
 /* inspiraciones*/
 @import"_estiloinspiraciones";
 /* sobre mi htm*/
@@ -171,20 +225,6 @@ border: 50px;
    grid-row: 4;
  }
  /* servicios*/
- .btn{
-    background-color: $color0;
-    border: $color0;
- }
- .btn-primary{
-   background-color: $color0;
-   border: $color0;
-}
- .btn:hover{
-   background-color: #4e4758 ;
-}
-.btn-primary:hover{
-   background-color: #4e4758 ;
-}
 .servicios-row{
    padding: 5%;
    margin: 0;

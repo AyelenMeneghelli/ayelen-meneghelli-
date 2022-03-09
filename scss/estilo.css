@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Source+Sans+Pro:ital,wght@1,600&display=swap");
+/* #887c99; */
 * {
   margin: 0;
   padding: 0;
@@ -11,18 +12,100 @@
 body {
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(#887c99, #ffffff);
+  background-image: linear-gradient(#40bd40, #ffffff);
   margin: 0;
   padding: 0;
   background-repeat: no-repeat;
 }
 
 .navbar-dark {
-  background-color: #887c99;
+  background-color: #40bd40;
 }
 
-.carouselInicio {
+/* botones*/
+.btn {
+  background-color: #40bd40;
+  border: #40bd40;
+}
+
+.btn-primary {
+  background-color: #40bd40;
+  border: #40bd40;
+  border-color: #ffffff;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #4e4758;
+}
+
+.btn-primary:hover {
+  background-color: #4e4758;
+}
+
+/* Index*/
+.inicio {
+  background-color: #d3c7da;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  justify-content: center;
   width: 100%;
+  height: 500px;
+  align-items: stretch;
+}
+
+.intro1 {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 25px;
+}
+
+.intro2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.intro3 {
+  display: flex;
+  width: 700px;
+  position: relative;
+  justify-content: flex-end;
+  margin-top: 0;
+  text-align: justify;
+  font-size: 25px;
+  margin-left: 70%;
+}
+
+.botonproyecto {
+  display: flex;
+  margin-left: 70%;
+}
+
+.col-sm-3 {
+  text-align: center;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 50px;
+}
+
+.manera {
+  display: flex;
+  justify-content: flex-start;
+  padding: 50px;
+  width: 100%;
+  font-size: 25px;
+  margin-right: 70%;
+  text-transform: uppercase;
 }
 
 .footeer {
@@ -78,27 +161,6 @@ ul {
 
 li {
   list-style: none;
-}
-
-.fraseincio {
-  font-size: 40px;
-  text-align: center;
-}
-.fraseincio span {
-  font-size: 50px;
-  font-family: "Lato", sans-serif;
-}
-
-.col-sm-3 {
-  text-align: center;
-}
-
-.container1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 50px;
 }
 
 /* inspiraciones*/
@@ -625,24 +687,6 @@ li {
 }
 
 /* servicios*/
-.btn {
-  background-color: #887c99;
-  border: #887c99;
-}
-
-.btn-primary {
-  background-color: #887c99;
-  border: #887c99;
-}
-
-.btn:hover {
-  background-color: #4e4758;
-}
-
-.btn-primary:hover {
-  background-color: #4e4758;
-}
-
 .servicios-row {
   padding: 5%;
   margin: 0;

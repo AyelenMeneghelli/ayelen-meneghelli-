@@ -12,25 +12,25 @@
 body {
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(#40bd40, #ffffff);
+  background-image: linear-gradient(#636260, #ffffff);
   margin: 0;
   padding: 0;
   background-repeat: no-repeat;
 }
 
 .navbar-dark {
-  background-color: #40bd40;
+  background-color: #636260;
 }
 
 /* botones*/
 .btn {
-  background-color: #40bd40;
-  border: #40bd40;
+  background-color: #636260;
+  border: #636260;
 }
 
 .btn-primary {
-  background-color: #40bd40;
-  border: #40bd40;
+  background-color: #636260;
+  border: #636260;
   border-color: #ffffff;
   text-align: center;
 }
@@ -45,7 +45,7 @@ body {
 
 /* Index*/
 .inicio {
-  background-color: #d3c7da;
+  background-color: #c3bbc7;
   display: flex;
   flex-wrap: wrap;
   padding: 50px;

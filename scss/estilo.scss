@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Source+Sans+Pro:ital,wght@1,600&display=swap');
 
-$color0: #40bd40;
-$color1: #d3c7da;
+$color0: #536151;
+$color1: #c2bec4;
 $color2: #b3c7ca;
 $color3: #ffffff;
 $fuente1:'Source Sans Pro', sans-serif;
@@ -25,7 +25,7 @@ $sombra: 10px 10px rgba( 000, 0, 0, 0.1);
 body{
    height: 100%;
    width: 100%;
-  background-image: linear-gradient($color0 ,$color3);  
+   background-image: linear-gradient($color0 ,$color3);  
    margin: 0;
    padding: 0;
    background-repeat: no-repeat;
@@ -198,13 +198,14 @@ li{
    flex-direction: column;
    justify-content: center;
  }
-.form{
+.formularioo{
     width: 100%;
     opacity: .5;
 
  }
  .ubicacion{
     grid-column: 1/2;
+    width: 100%;
     grid-row: 2/3;
     display: flex;
     flex-direction: column;
@@ -220,10 +221,7 @@ li{
    justify-content: center;
    font-size: 30px;
  }
- .footeer {
-   grid-column: 1/4;
-   grid-row: 4;
- }
+
  /* servicios*/
 .servicios-row{
    padding: 5%;
@@ -234,10 +232,10 @@ li{
    align-items: center;
 }
 $dias: (
-   dia1:#d5c9db,
-   dia2:#bcb1c2,
-   dia3:#a59caa,
-   dia4:#938c97,
+   dia1:#c9dbce,
+   dia2:#b1c2b2,
+   dia3:#9caaa1,
+   dia4:#8c978d,
 );
 @each $dia, $colorss in $dias {
    .box--#{$dia} {

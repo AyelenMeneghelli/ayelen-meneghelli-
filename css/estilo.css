@@ -12,25 +12,25 @@
 body {
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(#40bd40, #ffffff);
+  background-image: linear-gradient(#536151, #ffffff);
   margin: 0;
   padding: 0;
   background-repeat: no-repeat;
 }
 
 .navbar-dark {
-  background-color: #40bd40;
+  background-color: #536151;
 }
 
 /* botones*/
 .btn {
-  background-color: #40bd40;
-  border: #40bd40;
+  background-color: #536151;
+  border: #536151;
 }
 
 .btn-primary {
-  background-color: #40bd40;
-  border: #40bd40;
+  background-color: #536151;
+  border: #536151;
   border-color: #ffffff;
   text-align: center;
 }
@@ -45,7 +45,7 @@ body {
 
 /* Index*/
 .inicio {
-  background-color: #d3c7da;
+  background-color: #c2bec4;
   display: flex;
   flex-wrap: wrap;
   padding: 50px;
@@ -151,6 +151,9 @@ li {
 
 /* inspiraciones*/
 .citaautor {
+  margin: 0;
+  display: flex;
+  justify-content: center;
   font-size: 70px;
   font-family: "Lato", sans-serif;
 }
@@ -162,9 +165,9 @@ li {
 .fotospolaroid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(9, 700px);
+  grid-template-rows: repeat(9, 400px);
   grid-gap: 10px;
-  width: 100%;
+  width: 80%;
   height: 100%;
   padding: 0;
   margin: 0;
@@ -181,6 +184,8 @@ li {
 }
 
 .polaroid2 {
+  height: 100%;
+  width: 100%;
   grid-column: 4/5;
   grid-row: 2/3;
   background-image: url(../imagenes/polaroid.png);
@@ -587,6 +592,22 @@ li {
     box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
   }
 }
+/* -----  videos */
+.inspovideos {
+  margin: 0;
+  padding: 0;
+}
+
+.videos1 {
+  margin: 0;
+  padding: 0;
+}
+
+.videos2 {
+  margin: 0;
+  padding: 0;
+}
+
 /* sobre mi htm*/
 .informacion {
   width: 100%;
@@ -643,13 +664,14 @@ li {
   justify-content: center;
 }
 
-.form {
+.formularioo {
   width: 100%;
   opacity: 0.5;
 }
 
 .ubicacion {
   grid-column: 1/2;
+  width: 100%;
   grid-row: 2/3;
   display: flex;
   flex-direction: column;
@@ -667,11 +689,6 @@ li {
   font-size: 30px;
 }
 
-.footeer {
-  grid-column: 1/4;
-  grid-row: 4;
-}
-
 /* servicios*/
 .servicios-row {
   padding: 5%;
@@ -683,7 +700,7 @@ li {
 }
 
 .box--dia1 {
-  background-color: #d5c9db;
+  background-color: #c9dbce;
   height: 50px;
   width: 100%;
   display: flex;
@@ -694,7 +711,7 @@ li {
 }
 
 .box--dia2 {
-  background-color: #bcb1c2;
+  background-color: #b1c2b2;
   height: 50px;
   width: 100%;
   display: flex;
@@ -705,7 +722,7 @@ li {
 }
 
 .box--dia3 {
-  background-color: #a59caa;
+  background-color: #9caaa1;
   height: 50px;
   width: 100%;
   display: flex;
@@ -716,7 +733,7 @@ li {
 }
 
 .box--dia4 {
-  background-color: #938c97;
+  background-color: #8c978d;
   height: 50px;
   width: 100%;
   display: flex;
